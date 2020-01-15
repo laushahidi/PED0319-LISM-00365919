@@ -2,7 +2,7 @@
 
 ## Laura Ivonne Shahidinejad Martinez 
 
-## Laboratorio 01
+## Laboratorio 02
 
 ### Observaciones al instructor
 * Buenas y claras presentaciones.
