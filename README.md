@@ -2,7 +2,7 @@
 
 ## Laura Ivonne Shahidinejad Martinez 
 
-## Laboratorio 04
+## Laboratorio 05
 
 ### Observaciones al instructor
 * Buenas y claras presentaciones.
@@ -10,6 +10,6 @@
 * Buen manejo del tiempo.
 
 ## Dificultades en ejercicios de tarea
-* Como realizar los procesos en la recursividad.
-* Tiempo limitado por trabajo.
-* Realizar ciertos calculos.
+* Creacion de funciones para realizar las acciones de las pilas.
+* Punteros dobles.
+* Punteros en las funciones.
