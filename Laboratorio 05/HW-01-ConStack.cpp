@@ -25,14 +25,14 @@ int main(void){
 
     // Menu "do while" para pedir datos mientras el usuario lo desee
     do{
-        cout << endl << "Precio del producto $: "; cin >> auxP.price; cin.ignore();
-        cout << "Nombre del producto: "; getline(cin, auxP.name);
+        cout << endl << "Nombre del producto: "; getline(cin, auxP.name);
+        cout << "Precio del producto $: "; cin >> auxP.price; cin.ignore();
         cout << "Cantidad: "; cin >> auxP.quantity; cin.ignore();
 
         // Funcion para agregar los datos ingresados a la pila
         products.push(auxP);
 
-        cout << "¿Desea ingresar los datos de otro producto? (s / n): "; getline(cin, option);
+        cout << endl << "¿Desea ingresar los datos de otro producto? (s / n): "; getline(cin, option);
 
     } while(option != "n");
 
