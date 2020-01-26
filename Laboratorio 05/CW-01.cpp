@@ -7,7 +7,7 @@ using namespace std;
 
 struct pack{
     string content, address;
-    float weight;
+    float weigth;
 };
 
 int main(void){
@@ -16,7 +16,7 @@ int main(void){
     pack aux;
 
     do{
-        cout << "Peso: "; cin >> aux.weight; cin.ignore();
+        cout << "Peso: "; cin >> aux.weigth; cin.ignore();
         cout << "Contenido: "; getline(cin, aux.content);
         cout << "Destino: "; getline(cin, aux.address);
 
@@ -29,7 +29,7 @@ int main(void){
 
     aux = st.top();
 
-    cout << "Peso: " << aux.weight << endl;
+    cout << "Peso: " << aux.weigth << endl;
     cout << "Contenido: " << aux.content << endl;
     cout << "Destino: " << aux.address << endl;
 

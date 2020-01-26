@@ -6,17 +6,18 @@ struct node{
     string content, address;
     float weight;
     node* next;
-}; 
+};
 typedef node* st;
 
+bool isEmpty(st* pSt);
 void push(st* pSt, string content, string address, float weight);
 node top(st* pSt);
 node pop(st* pSt);
-bool isEmpty(st* pSt);
+
+
 
 int main(void){
     st pSt = NULL;
-    st pSt;
 
     int option = 0;
     string content, address;
@@ -41,8 +42,8 @@ int main(void){
     cout << "Direccion: " << aux.address << endl;
 
     aux = pop(&pSt);
-    
 
+    return 0;
 }
 
 void push(st* pSt, string content, string address, float weight){
@@ -61,10 +62,10 @@ node top(st* pSt){
         aux.address = "";
         aux.content = "";
         aux.weight = 0;
-        aux.next = NULL;    
+        aux.next = NULL;
     }
     else{
-        aux.address = (*pSt)->address;
+        aux.address = (*pSt)->address;        
         aux.content = (*pSt)->content;
         aux.weight = (*pSt)->weight;
         aux.next = NULL;
@@ -78,10 +79,10 @@ node pop(st* pSt){
         aux.address = "";
         aux.content = "";
         aux.weight = 0;
-        aux.next = NULL;    
+        aux.next = NULL;
     }
     else{
-        aux.address = (*pSt)->address;
+        aux.address = (*pSt)->address;        
         aux.content = (*pSt)->content;
         aux.weight = (*pSt)->weight;
         aux.next = NULL;
@@ -92,5 +93,5 @@ node pop(st* pSt){
 }
 
 bool isEmpty(st* pSt){
-    return (*pSt) = NULL;
+    return (*pSt) == NULL;
 }

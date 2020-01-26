@@ -13,7 +13,6 @@ int main(void){
     pStart = push(pStart, 8);
     pStart = push(pStart, 9);
     pStart = push(pStart, 12);
-    
 }
 
 node* push(node* pStart, int n){
@@ -34,4 +33,5 @@ node* top(node* pStart){
         pStart->next = NULL;
         return pStart;
     }
+
 }
