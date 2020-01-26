@@ -3,6 +3,7 @@
 #include <string>
 using namespace std;
 
+// Creando el registro de los nodos
 struct node{
     string name;
     float price;
@@ -11,42 +12,56 @@ struct node{
 };
 typedef node* PD;
 
+// Declarando prototipos
 bool isEmpty(PD* products);
 void push(PD* products, string name, float price, int quantity);
 node top(PD* products);
 node pop(PD* products);
 
 int main(void){
+
+    // Inicializando la pila
     PD products = NULL;
 
+    // Declarando los datos
     string option;
     string name;
     float price;
     int quantity;
 
+    // Mostrando el menu en un do while
     do{
-        
+        // Pidiendo datos
         cout << endl << "Nombre del producto: "; getline(cin, name);
         cout << "Precio del producto $: "; cin >> price; 
         cout << "Cantidad: "; cin >> quantity; cin.ignore();
 
+        // Metiendo los datos ingresados
         push(&products, name, price, quantity);
 
         cout << "Ingresar mas datos (s / n): "; getline(cin, option);
 
     } while(option != "n");
 
-    node auxP = top(&products);
+    // Mostrando todos los nodos hasta que la pila este vacia
+    while(!isEmpty(&products)){
+        // Mostrando el ultimo nodo
+        node auxP = top(&products);
 
-    cout << endl << "Nombre del producto: " << auxP.name << endl;
-    cout << "Precio $: " << auxP.price << endl;
-    cout << "Cantidad: " << auxP.quantity << endl;
+        cout << endl << "Nombre del producto: " << auxP.name << endl;
+        cout << "Precio $: " << auxP.price << endl;
+        cout << "Cantidad: " << auxP.quantity << endl;
 
-    auxP = pop(&products);
+        // Quitando el ultimo nodo
+        auxP = pop(&products);
+    }    
 
     return 0;
 }
 
+// Funciones de stack con punteros
+
+// Funcion para agregar datos
 void push(PD* products, string name, float price, int quantity){
 
     node* newNode = new node;
@@ -58,9 +73,12 @@ void push(PD* products, string name, float price, int quantity){
     *products = newNode;
 }
 
+// Funcion para mostrar el ultimo dato ingresado
 node top(PD* products){
 
     node auxP;
+
+    // Si la pila esta vacia
     if(!(*products)){
         auxP.name = "";
         auxP.price = 0;
@@ -77,6 +95,7 @@ node top(PD* products){
     return auxP;
 }
 
+// Funcion para quitar los datos del ultimo nodo
 node pop(PD* products){
 
     node auxP;
@@ -98,6 +117,7 @@ node pop(PD* products){
     return auxP;
 }
 
+// Funcion para la pila vacia
 bool isEmpty(PD* products){
 
     return (*products) == NULL;
