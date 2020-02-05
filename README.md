@@ -2,14 +2,14 @@
 
 ## Laura Ivonne Shahidinejad Martinez 
 
-## Laboratorio 06
+## Laboratorio 08
 
 ### Observaciones al instructor
-* Analizar cada funcion de cola y pila para que entendamos mejor.
+* Tomar asistencia a partir de las 11, no antes.
 * Buen manejo del tiempo.
 * Buenas y claras presentaciones.
 
 ## Dificultades en ejercicios de tarea
 * Punteros dobles.
-* Creacion de funciones para realizar las acciones de las pilas y colas.
+* Recordar los codigos.
 * Punteros en las funciones.
