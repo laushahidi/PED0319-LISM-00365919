@@ -11,5 +11,5 @@
 
 ## Dificultades en ejercicios de tarea
 * Punteros dobles.
-* Recordar los codigos.
+* Usar registros en las funciones.
 * Punteros en las funciones.
